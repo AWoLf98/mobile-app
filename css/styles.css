@@ -49,6 +49,8 @@ button {
   max-width: 480px;
 }
 
+/* ==== HEADER ====*/
+
 .header {
   margin-top: 26px;
   background: linear-gradient(90deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
@@ -81,6 +83,9 @@ button {
 .header-list-url {
   display: none;
 }
+
+/* ==== HEADER ====*/
+/* ==== HERO ====*/
 
 .hero-container {
   padding-top: 100px;
@@ -131,9 +136,114 @@ button {
   background: var(--gradient-elements);
 }
 
+/* ==== HERO ====*/
+/* ==== FUTURES ====*/
+
 .sec-futures {
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: var(--main-white-color);
 }
+
+.header-futures {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: var(--main-black-color);
+}
+
+.main-paragaph-features {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--main-black-color);
+}
+
+/* ==== FUTURES ====*/
+/* ==== VIDEO ====*/
+
+.sec-video {
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 88px;
+}
+
+.video-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-video {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.main-paragraph-video {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.social-list-icons {
+  display: flex;
+  column-gap: 20px;
+}
+
+.social-url {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--gradient-elements);
+}
+
+.social-icon {
+  fill: var(--main-white-color);
+}
+
+/* ==== VIDEO ====*/
+/* ==== TEAM ====*/
+
+.sec-team {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: var(--main-white-color);
+}
+
+.header-team {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--main-black-color);
+}
+
+.team-main-paragraph {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: center;
+  margin-bottom: 28px;
+  color: var(--main-black-color);
+}
+
+/* ==== TEAM ====*/
 
 @media screen and (min-width: 480px) {
   .container {
@@ -148,6 +258,8 @@ button {
     min-width: none;
     max-width: none;
   }
+
+  /* ==== HEADER ====*/
 
   .header-list-url {
     display: flex;
@@ -167,6 +279,9 @@ button {
   .menu-button {
     display: none;
   }
+
+  /* ==== HEADER ====*/
+  /* ==== HERO ====*/
 
   .hero-container {
     padding-top: 60px;
@@ -198,6 +313,66 @@ button {
   .download-button {
     margin: 0;
   }
+
+  /* ==== HERO ====*/
+  /* ==== FUTURES ====*/
+
+  .sec-futures {
+    padding-top: 100px;
+    padding-bottom: 47px;
+  }
+
+  .header-futures {
+    font-size: 24x;
+  }
+
+  .main-paragaph-features {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* ==== FUTURES ====*/
+  /* ==== VIDEO ====*/
+
+  .sec-video {
+    padding-top: 80px;
+    padding-bottom: 46px;
+  }
+
+  .header-video {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .main-paragraph-video {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* ==== VIDEO ====*/
+  /* ==== TEAM ====*/
+
+  .sec-team {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .header-team {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .team-main-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+  .team-list-item {
+    background: var(--gradient-elements);
+  }
+
+  /* ==== TEAM ====*/
 }
 
 @media screen and (min-width: 1280px) {
@@ -205,6 +380,8 @@ button {
     padding: 0 16px;
     width: 1280px;
   }
+
+  /* ==== HEADER ====*/
 
   .main-logo {
     padding: 19px 0;
@@ -218,6 +395,9 @@ button {
     padding: 28px 0;
   }
 
+  /* ==== HEADER ====*/
+  /* ==== HERO ====*/
+
   .hero-container {
     padding-top: 145px;
     padding-bottom: 146px;
@@ -227,4 +407,58 @@ button {
     font-size: 40px;
     margin-bottom: 18px;
   }
+
+  /* ==== HERO ====*/
+  /* ==== FUTURES ====*/
+
+  .sec-futures {
+    padding-bottom: 100px;
+  }
+
+  .header-futures {
+    margin-bottom: 80px;
+  }
+
+  .main-paragaph-features {
+    width: 855px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 56px;
+  }
+
+  /* ==== FUTURES ====*/
+  /* ==== VIDEO ====*/
+
+  .sec-video {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .video-text-content {
+    width: 480px;
+    align-items: flex-start;
+  }
+
+  .main-paragraph-video {
+    text-align: start;
+    margin-bottom: 40px;
+  }
+
+  .video-container {
+    flex-direction: row;
+    gap: 161px;
+  }
+
+  /* ==== VIDEO ====*/
+  /* ==== TEAM ====*/
+
+  .header-team {
+    margin-bottom: 80px;
+  }
+
+  .team-main-paragraph {
+    margin-bottom: 56px;
+  }
+
+  /* ==== TEAM ====*/
 }

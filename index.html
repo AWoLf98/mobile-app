@@ -90,58 +90,89 @@
         </div>
       </section>
       <section class="sec-video" id="video">
-        <div class="container">
-          <h2 class="header-video">Watch the video</h2>
-          <p class="main-paragraph-video">
-            Watch the video below to see our mobile app in action. With a user-friendly interface,
-            personalized recommendations, secure transactions, and real-time updates, our app is
-            available for download on both Apple and Android devices and is designed to make your
-            life easier.
-          </p>
-          <ul class="social-icons">
-            <li class="social-items">
-              <svg>
-                <use></use>
-              </svg>
-            </li>
-            <li class="social-items">
-              <svg>
-                <use></use>
-              </svg>
-            </li>
-          </ul>
-          <picture>
-            <source media="(min-width: )" srcset="" sizes="" />
-            <img src="" alt="" />
+        <div class="video-container container">
+          <div class="video-text-content">
+            <h2 class="header-video">Watch the video</h2>
+            <p class="main-paragraph-video">
+              Watch the video below to see our mobile app in action. With a user-friendly interface,
+              personalized recommendations, secure transactions, and real-time updates, our app is
+              available for download on both Apple and Android devices and is designed to make your
+              life easier.
+            </p>
+            <ul class="social-list-icons">
+              <li>
+                <a class="social-url" href="social-url">
+                  <svg class="social-icon" width="30" height="35">
+                    <use href="./img/svg/symbols.svg#icon-appple"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-url" href="">
+                  <svg class="social-icon" width="32" height="36">
+                    <use href="./img/svg/symbols.svg#icon-android"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <picture class="video-main-picture">
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/desktop/iphone-d.png    1x,
+                ./img/desktop/iphone-d@2x.png 2x,
+                ./img/desktop/iphone-d@3x.png 3x
+              "
+              sizes=""
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/tablet/iphone-t.png    1x,
+                ./img/tablet/iphone-t@2x.png 2x,
+                ./img/tablet/iphone-t@3x.png 3x
+              "
+              sizes=""
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/iphone.png 1x, ./img/iphone@2x.png 2x, ./img/iphone@3x.png 3x"
+              sizes=""
+              type="image/webp"
+            />
+            <img src="./img/iphone.png" alt="IPhone X" loading="lazy" />
           </picture>
         </div>
       </section>
       <section class="sec-team" id="team">
         <div class="container">
           <h2 class="header-team">Our team</h2>
-          <p class="nain-paragraph">
+          <p class="team-main-paragraph">
             Our team is made up of talented and passionate individuals who are committed to
             providing the best experience for our users. Each member brings a unique set of skills
             and expertise to the table, allowing us to work collaboratively and effectively to
             achieve our goals.
           </p>
           <ul class="team-list">
-            <li>
+            <li class="team-list-item">
               <picture><img src="" alt="" /></picture>
               <h3 class="name-team-person">David Patel</h3>
               <p class="profession-person">Managing Direcor</p>
             </li>
-            <li>
+            <li class="team-list-item">
               <picture><img src="" alt="" /></picture>
               <h3 class="name-team-person">Rachel Kim</h3>
               <p class="profession-person">Lead Designer</p>
             </li>
-            <li>
+            <li class="team-list-item">
               <picture><img src="" alt="" /></picture>
               <h3 class="name-team-person">Samantha Chen</h3>
               <p class="profession-person">Lead Developer</p>
             </li>
-            <li>
+            <li class="team-list-item">
               <picture><img src="" alt="" /></picture>
               <h3 class="name-team-person">Andrew Nguyen</h3>
               <p class="profession-person">Sr. UI Designer</p>
