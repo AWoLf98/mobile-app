@@ -49,6 +49,11 @@ button {
   max-width: 480px;
 }
 
+.header {
+  margin-top: 26px;
+  background: linear-gradient(90deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
+}
+
 .main-logo {
   font-size: 28px;
   font-weight: 400;
@@ -56,9 +61,14 @@ button {
   color: var(--main-white-color);
 }
 
-.header {
-  margin-top: 26px;
-  background: linear-gradient(90deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
+.menu-button {
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-button-svg {
+  fill: var(--main-white-color);
 }
 
 .header-nav {
@@ -70,6 +80,59 @@ button {
 
 .header-list-url {
   display: none;
+}
+
+.hero-container {
+  padding-top: 100px;
+  padding-bottom: 127px;
+}
+
+.hero-header {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-par {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.hero-list {
+  margin-bottom: 40px;
+}
+
+.hero-list-item {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.hero-list-svg {
+  margin-right: 4px;
+  fill: var(--main-white-color);
+}
+
+.hero-list-par {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.download-button {
+  display: block;
+  width: 200px;
+  height: 42px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  margin: 0 auto;
+  color: var(--main-white-color);
+  background: var(--gradient-elements);
+}
+
+.sec-futures {
+  background-color: var(--main-white-color);
 }
 
 @media screen and (min-width: 480px) {
@@ -104,6 +167,37 @@ button {
   .menu-button {
     display: none;
   }
+
+  .hero-container {
+    padding-top: 60px;
+    padding-bottom: 143px;
+  }
+
+  .hero-header {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  .hero-par {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .hero-list {
+    margin-bottom: 62px;
+  }
+
+  .hero-list-item {
+    margin-bottom: 14px;
+  }
+
+  .hero-list-par {
+    font-size: 14px;
+  }
+
+  .download-button {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -122,5 +216,15 @@ button {
 
   .list-url-item {
     padding: 28px 0;
+  }
+
+  .hero-container {
+    padding-top: 145px;
+    padding-bottom: 146px;
+  }
+
+  .hero-header {
+    font-size: 40px;
+    margin-bottom: 18px;
   }
 }

@@ -1,0 +1,9 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-burger2" viewBox="0 0 52 32">
+<path d="M2 0c-1.105 0-2 0.895-2 2v0c0 1.105 0.895 2 2 2v0h48c1.105 0 2-0.895 2-2v0c0-1.105-0.895-2-2-2v0z"></path>
+<path d="M2 14c-1.105 0-2 0.895-2 2v0c0 1.105 0.895 2 2 2v0h48c1.105 0 2-0.895 2-2v0c0-1.105-0.895-2-2-2v0z"></path>
+<path d="M2 28c-1.105 0-2 0.895-2 2v0c0 1.105 0.895 2 2 2v0h48c1.105 0 2-0.895 2-2v0c0-1.105-0.895-2-2-2v0z"></path>
+</symbol>
+</defs>
+</svg>
