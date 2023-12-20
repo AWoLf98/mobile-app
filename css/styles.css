@@ -243,7 +243,52 @@ button {
   color: var(--main-black-color);
 }
 
+.team-list-item {
+  background: var(--gradient-elements);
+}
+
 /* ==== TEAM ====*/
+/* ==== TESTIMONIALS ====*/
+
+.sec-testimonials {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: var(--main-white-color);
+}
+
+.main-testimonials-header {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: var(--main-black-color);
+}
+
+.avatar-customer {
+  margin-bottom: 20px;
+}
+
+.name-customer {
+  color: var(--main-black-color);
+}
+
+.descr-customer {
+  color: var(--main-black-color);
+}
+
+.comment-customer {
+  color: var(--main-black-color);
+}
+
+.slider {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 8px;
+}
+
+/* ==== TESTIMONIALS ====*/
 
 @media screen and (min-width: 480px) {
   .container {
@@ -366,10 +411,6 @@ button {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 40px;
-  }
-
-  .team-list-item {
-    background: var(--gradient-elements);
   }
 
   /* ==== TEAM ====*/
