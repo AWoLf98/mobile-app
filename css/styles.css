@@ -201,6 +201,7 @@ button {
 .social-list-icons {
   display: flex;
   column-gap: 20px;
+  margin-bottom: 14px;
 }
 
 .social-url {
@@ -296,6 +297,13 @@ button {
   padding-top: 40px;
 }
 
+.footer-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
 .footer-form-header {
   font-size: 20px;
   font-weight: 700;
@@ -308,7 +316,14 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-bottom: 40px;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
 }
 
 .button-footer-form {
@@ -350,12 +365,14 @@ button {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .footer-paragraph {
   font-size: 14px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .footer-text-part {
@@ -364,9 +381,28 @@ button {
   align-items: center;
 }
 
+.footer-copyright {
+  font-size: 14px;
+  font-weight: 500;
+  width: 193px;
+}
+
 .footer-copyright-part {
   border-top: 1px solid var(--main-white-color);
   padding: 22px 24px;
+}
+
+.footer-addr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-addr-item {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--main-white-color);
 }
 
 /* ==== FOOTER ====*/
@@ -506,12 +542,34 @@ button {
     font-size: 24px;
   }
 
+  .footer-content-container {
+    margin-bottom: 80px;
+  }
+
+  .form-input-container {
+    flex-direction: row;
+    gap: 32px;
+  }
+
   .footer-header {
     font-size: 24px;
   }
 
   .footer-paragraph {
     font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .footer-copyright {
+    width: 100%;
+  }
+
+  .social-list-icons {
+    margin-bottom: 40px;
+  }
+
+  .footer-copyright-part {
+    padding: 25px 32px;
   }
 
   /* ==== FOOTER ====*/
@@ -610,7 +668,36 @@ button {
     padding-top: 80px;
   }
 
+  .footer-content-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 140px;
+  }
+
   .footer-form-header {
     margin-bottom: 80px;
+  }
+
+  .footer-paragraph {
+    margin-bottom: 20px;
+  }
+
+  .social-list-icons {
+    margin-bottom: 20px;
+  }
+
+  .footer-form-contact {
+    align-items: flex-end;
+    width: 608px;
+  }
+
+  .footer-text-part {
+    align-items: flex-start;
+    width: 500px;
+  }
+
+  .footer-copyright-part {
+    padding: 21px 16px;
   }
 }

@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Mobileapp</title>
+    <link rel="icon" type="image/x-icon" href="./img/svg/phone.svg" />
   </head>
   <body>
     <header class="header">
@@ -101,14 +102,22 @@
             </p>
             <ul class="social-list-icons">
               <li>
-                <a class="social-url" href="social-url">
+                <a
+                  class="social-url"
+                  target="_blank"
+                  href="https://apps.apple.com/ua/app/apple-store/id375380948?l=ua"
+                >
                   <svg class="social-icon" width="30" height="35">
                     <use href="./img/svg/symbols.svg#icon-appple"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="social-url" href="">
+                <a
+                  class="social-url"
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?id=com.google.android.gms&pcampaignid=web_share"
+                >
                   <svg class="social-icon" width="32" height="36">
                     <use href="./img/svg/symbols.svg#icon-android"></use>
                   </svg>
@@ -237,54 +246,62 @@
     <footrer class="footer" id="footer">
       <div class="footer-container container">
         <h2 class="footer-form-header">Contact us</h2>
-        <form class="footer-form-contact">
-          <input class="footer-form-input footer-form-items-text" type="text" placeholder="Name" />
-          <input
-            class="footer-form-input footer-form-items-text"
-            type="email"
-            placeholder="Email"
-          />
-          <textarea
-            class="footer-form-text footer-form-items-text"
-            name=""
-            id=""
-            placeholder="Message"
-          ></textarea>
-          <button class="button-footer-form" type="submit">Submit</button>
-        </form>
-        <div class="footer-text-part">
-          <h2 class="footer-header">Get in touch with us</h2>
-          <p class="footer-paragraph">
-            Have a question or comment about our app? Get in touch with us using the contact form
-            below and our team will respond shortly.
-          </p>
-          <ul class="social-list-icons">
-            <li>
-              <a class="social-url" href="">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./img/svg/symbols.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-url" href="">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./img/svg/symbols.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-url" href="">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./img/svg/symbols.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <address>
-            <a href="tel:+xxxxxxxxxxxx">+xx-xxxx-xxxx-xx</a>
-            <a href="mailto:goIteens@gmail.com">goIteens@gmail.com</a>
-          </address>
+        <div class="footer-content-container">
+          <form class="footer-form-contact">
+            <div class="form-input-container">
+              <input
+                class="footer-form-input footer-form-items-text"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                class="footer-form-input footer-form-items-text"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+            <textarea
+              class="footer-form-text footer-form-items-text"
+              name=""
+              id=""
+              placeholder="Message"
+            ></textarea>
+            <button class="button-footer-form" type="submit">Submit</button>
+          </form>
+          <div class="footer-text-part">
+            <h2 class="footer-header">Get in touch with us</h2>
+            <p class="footer-paragraph">
+              Have a question or comment about our app? Get in touch with us using the contact form
+              below and our team will respond shortly.
+            </p>
+            <ul class="social-list-icons">
+              <li>
+                <a class="social-url" href="">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./img/svg/symbols.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-url" href="">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./img/svg/symbols.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-url" href="">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./img/svg/symbols.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <address class="footer-addr">
+              <a class="footer-addr-item" href="tel:+XXXXXXXXXXXX">+XX-XXXX-XXXX-XX</a>
+              <a class="footer-addr-item" href="mailto:goIteens@gmail.com">goIteens@gmail.com</a>
+            </address>
+          </div>
         </div>
         <div class="footer-copyright-part">
           <p class="footer-copyright">© 2019 GoIteens Template. All Rights Reserved</p>
