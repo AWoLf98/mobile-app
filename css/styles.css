@@ -3,8 +3,11 @@
   --main-white-color: #f6f7f7;
   --main-black-color: #06071b;
   --gradient-elements: linear-gradient(90deg, #00c5eb -1.97%, #b544fe 89.43%);
+  --main-dur-func-transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+
   background-color: var(--main-black-color);
   color: var(--main-white-color);
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -50,10 +53,23 @@ button {
 }
 
 /* ==== HEADER ====*/
+main {
+  position: relative;
+}
 
 .header {
-  margin-top: 26px;
+  position: absolute;
+  top: 26px;
+  width: 100%;
+  z-index: 999;
   background: linear-gradient(90deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
+}
+
+.header-container {
+  background-color: transparent;
+  transition: background-color var(--main-dur-func-transition),
+    height var(--main-dur-func-transition), 
+    position var(--main-dur-func-transition);
 }
 
 .main-logo {
@@ -77,11 +93,61 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100svb;
 }
 
 .header-list-url {
-  display: none;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.header-container.is-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vh;
+  height: 100vh;
+  z-index: 999;
+  background-color: var(--main-black-color);
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-container.is-open .header-nav {
+  position: absolute;
+  gap:115px;
+  top: 26px;
+}
+
+.header-container.is-open .header-list-url {
+  flex-wrap: wrap;
+  clip: initial;
+  clip-path: initial;
+  overflow: initial;
+  position: relative;
+  height: initial;
+  width: initial;
+  align-self: flex-start;
+  color: var(--main-white-color);
+}
+
+.header-container.is-open .list-url {
+  text-transform: uppercase;
+  color: var(--main-white-color);
+}
+.header-container.is-open .list-url:hover,
+.header-container.is-open .list-url:focus {
+  background: var(--gradient-elements);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* ==== HEADER ====*/
