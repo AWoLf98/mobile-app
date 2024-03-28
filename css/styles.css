@@ -10,6 +10,13 @@
   scroll-behavior: smooth;
 }
 
+@media screen and (prefer-color-scheme: dark) {
+  :root {
+    --main-white-color: #06071b;
+    --main-black-color: #f6f7f7;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -68,8 +75,7 @@ main {
 .header-container {
   background-color: transparent;
   transition: background-color var(--main-dur-func-transition),
-    height var(--main-dur-func-transition), 
-    position var(--main-dur-func-transition);
+    height var(--main-dur-func-transition), position var(--main-dur-func-transition);
 }
 
 .main-logo {
@@ -122,7 +128,7 @@ main {
 
 .header-container.is-open .header-nav {
   position: absolute;
-  gap:115px;
+  gap: 115px;
   top: 26px;
 }
 
