@@ -117,7 +117,8 @@ main {
 .header-container {
   background-color: transparent;
   transition: background-color var(--main-dur-func-transition),
-    height var(--main-dur-func-transition);
+    height var(--main-dur-func-transition),
+    box-shadow var(--main-dur-func-transition);
 }
 
 .main-logo {
@@ -189,6 +190,7 @@ main {
   background-size: cover;
   background-position: bottom;
   background-color: var(--main-black-color);
+  box-shadow: -5px 0 5px rgba(0, 197, 235, 0.3), 5px 0 5px rgba(181, 68, 254, 0.3);;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
