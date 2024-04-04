@@ -94,13 +94,17 @@ main {
 }
 
 .header::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(90deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 197, 235, 0.3) -1.97%,
+    rgba(181, 68, 254, 0.3) 89.43%
+  );
   opacity: 1;
   transition: opacity var(--main-dur-more-func-transition);
   z-index: -1;
@@ -124,13 +128,42 @@ main {
 }
 
 .menu-button {
+  width: 33px;
+  height: 33px;
   display: block;
   background-color: transparent;
   border: none;
+  padding: 9px 4px;
 }
 
-.menu-button-svg {
-  fill: var(--main-white-color);
+.menu-button > span {
+  position: relative;
+  transition: background-color var(--main-dur-func-transition);
+}
+
+.menu-button > span::before,
+.menu-button > span::after {
+  content: '';
+  position: absolute;
+  transition: transform var(--main-dur-more-func-transition);
+}
+
+.menu-button > span,
+.menu-button > span::before,
+.menu-button > span::after {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--main-white-color);
+}
+
+.menu-button > span::before {
+  top: -7px;
+}
+
+.menu-button > span::after {
+  top: 7px;
 }
 
 .header-nav {
@@ -156,6 +189,18 @@ main {
   background-size: cover;
   background-position: bottom;
   background-color: var(--main-black-color);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header-container.is-open {
+    background-image: url('../img/menu-back@2x.png');
+  }
+}
+
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .header-container.is-open {
+    background-image: url('../img/menu-back@3x.png');
+  }
 }
 
 .header-container.is-open .header-nav {
@@ -194,11 +239,23 @@ main {
   color: transparent;
 }
 
+.header-container.is-open .menu-button > span {
+  background-color: transparent;
+}
+
+.header-container.is-open .menu-button > span::before {
+  transform: translate(0, 7px) rotate(-45deg);
+}
+
+.header-container.is-open .menu-button > span::after {
+  transform: translate(0, -7px) rotate(45deg);
+}
+
 /* ==== HEADER ====*/
 /* ==== HERO ====*/
 
 .hero-container {
-  padding-top: 100px;
+  padding-top: 182px;
   padding-bottom: 127px;
 }
 
@@ -556,8 +613,14 @@ main {
   /* ==== HERO ====*/
 
   .hero-container {
-    padding-top: 60px;
-    padding-bottom: 143px;
+    padding-top: 142px;
+    padding-bottom: 142px;
+    background-image: url('../img/tablet/hero-back.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-origin: padding-box;
+    background-position-x: 0;
+    background-position-y: 108px;
   }
 
   .hero-header {
@@ -567,7 +630,7 @@ main {
 
   .hero-par {
     font-size: 20px;
-    margin-bottom: 14px;
+    margin-bottom: 28px;
   }
 
   .hero-list {
@@ -709,7 +772,7 @@ main {
   /* ==== HERO ====*/
 
   .hero-container {
-    padding-top: 145px;
+    padding-top: 243px;
     padding-bottom: 146px;
   }
 
