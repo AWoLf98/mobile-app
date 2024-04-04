@@ -30,7 +30,7 @@ function openMenu() {
 }
 
 function resizeWindow() {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 768 && !refs.menu.classList.contains('is-open')) {
     refs.listNav.classList.add('visually-hidden');
   } else {
     refs.menu.classList.remove('is-open');
