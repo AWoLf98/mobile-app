@@ -1,5 +1,7 @@
 :root {
   font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
   --main-white-color: #f6f7f7;
   --main-black-color: #06071b;
   --gradient-elements: linear-gradient(90deg, #00c5eb -1.97%, #b544fe 89.43%);
@@ -117,8 +119,7 @@ main {
 .header-container {
   background-color: transparent;
   transition: background-color var(--main-dur-func-transition),
-    height var(--main-dur-func-transition),
-    box-shadow var(--main-dur-func-transition);
+    height var(--main-dur-func-transition), box-shadow var(--main-dur-func-transition);
 }
 
 .main-logo {
@@ -190,7 +191,7 @@ main {
   background-size: cover;
   background-position: bottom;
   background-color: var(--main-black-color);
-  box-shadow: -5px 0 5px rgba(0, 197, 235, 0.3), 5px 0 5px rgba(181, 68, 254, 0.3);;
+  box-shadow: -5px 0 5px rgba(0, 197, 235, 0.3), 5px 0 5px rgba(181, 68, 254, 0.3);
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -228,7 +229,6 @@ main {
 
 .header-container.is-open .list-url {
   font-size: 32px;
-  font-weight: 500;
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--main-white-color);
@@ -257,6 +257,7 @@ main {
 /* ==== HERO ====*/
 
 .hero-container {
+  position: relative;
   padding-top: 182px;
   padding-bottom: 127px;
 }
@@ -305,6 +306,14 @@ main {
   background: var(--gradient-elements);
 }
 
+.hero-main-picture {
+  position: absolute;
+  z-index: -1;
+  top: 84px;
+  left: 0;
+  right: -132px;
+}
+
 /* ==== HERO ====*/
 /* ==== FUTURES ====*/
 
@@ -325,7 +334,6 @@ main {
 
 .main-paragaph-features {
   font-size: 14px;
-  font-weight: 500;
   line-height: 1.43;
   text-align: center;
   margin-bottom: 40px;
@@ -362,7 +370,6 @@ main {
 
 .main-paragraph-video {
   font-size: 14px;
-  font-weight: 500;
   text-align: center;
   margin-bottom: 24px;
 }
@@ -406,7 +413,6 @@ main {
 
 .team-main-paragraph {
   font-size: 14px;
-  font-weight: 500;
   line-height: 1.43;
   text-align: center;
   margin-bottom: 28px;
@@ -526,20 +532,17 @@ main {
 .footer-form-items-text,
 .footer-form-items-text::placeholder {
   font-size: 14px;
-  font-weight: 500;
   color: #939eac;
 }
 
 .footer-header {
   font-size: 20px;
-  font-weight: 500;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .footer-paragraph {
   font-size: 14px;
-  font-weight: 500;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -552,7 +555,6 @@ main {
 
 .footer-copyright {
   font-size: 14px;
-  font-weight: 500;
   width: 193px;
 }
 
@@ -570,7 +572,6 @@ main {
 
 .footer-addr-item {
   font-size: 16px;
-  font-weight: 500;
   color: var(--main-white-color);
 }
 
@@ -619,20 +620,29 @@ main {
     padding-bottom: 142px;
     background-image: url('../img/tablet/hero-back.png');
     background-repeat: no-repeat;
-    background-size: auto;
-    background-origin: padding-box;
-    background-position-x: 0;
-    background-position-y: 108px;
+    background-origin: border-box;
+    background-position-x: -87px;
+    background-position-y: 90px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: url('../img/tablet/hero-back@2x.png');
+    }
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    .hero-container {
+      background-image: url('../img/tablet/hero-back@3x.png');
+    }
   }
 
   .hero-header {
     font-size: 40px;
-    margin-bottom: 12px;
   }
 
   .hero-par {
     font-size: 20px;
-    margin-bottom: 28px;
   }
 
   .hero-list {
@@ -649,6 +659,13 @@ main {
 
   .download-button {
     margin: 0;
+  }
+
+  .hero-main-picture {
+    z-index: 0;
+    top: 230px;
+    right: 0;
+    left: unset;
   }
 
   /* ==== HERO ====*/
@@ -776,11 +793,17 @@ main {
   .hero-container {
     padding-top: 243px;
     padding-bottom: 146px;
+    background-position-x: -107px;
+    background-position-y: 190px;
   }
 
   .hero-header {
-    font-size: 40px;
     margin-bottom: 18px;
+  }
+
+  .hero-main-picture {
+    top: 167px;
+    right: 45px;
   }
 
   /* ==== HERO ====*/

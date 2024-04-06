@@ -79,7 +79,31 @@
             </li>
           </ul>
           <button class="download-button" type="button">Download</button>
-          <img src="" alt="">
+          <picture class="hero-main-picture">
+            <source
+              srcset="
+                ./img/desktop/iphone-x.png    1x,
+                ./img/desktop/iphone-x@2x.png 2x,
+                ./img/desktop/iphone-x@3x.png 3x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./img/tablet/iphone-x.png    1x,
+                ./img/tablet/iphone-x@2x.png 2x,
+                ./img/tablet/iphone-x@3x.png 3x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <source
+              srcset="./img/iphone-x.png 1x, ./img/iphone-x@2x.png 2x, ./img/iphone-x@3x.png 3x"
+              type="image/png"
+            />
+            <img src="./img/iphone-x.png" alt="IPhone X" />
+          </picture>
         </div>
       </section>
       <!-- HERO -->
