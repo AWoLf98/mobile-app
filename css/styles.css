@@ -352,6 +352,36 @@ main {
   color: var(--main-black-color);
 }
 
+.pic-mobile-fuatures {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fuatures-item {
+  display: flex;
+  gap: 12px;
+}
+
+.header-fuature-conteiner {
+  /* padding-top: 4px; */
+  /* display: flex;
+  gap: 12px; */
+  /* align-items: baseline; */
+}
+
+.header-fuature {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  color:  var(--main-black-color);
+}
+
+.fuature-detail {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--main-black-color);
+}
+
 /* ==== FUTURES ====*/
 /* ==== VIDEO ====*/
 
