@@ -81,24 +81,25 @@
           <button class="download-button" type="button">Download</button>
           <picture class="hero-main-picture">
             <source
+              media="(min-width: 1280px)"
               srcset="
                 ./img/desktop/iphone-x.png    1x,
                 ./img/desktop/iphone-x@2x.png 2x,
                 ./img/desktop/iphone-x@3x.png 3x
               "
-              media="(min-width: 1280px)"
               type="image/png"
             />
             <source
+              media="(min-width: 768px)"
               srcset="
                 ./img/tablet/iphone-x.png    1x,
                 ./img/tablet/iphone-x@2x.png 2x,
                 ./img/tablet/iphone-x@3x.png 3x
               "
-              media="(min-width: 768px)"
               type="image/png"
             />
             <source
+              media="(max-width: 768px)"
               srcset="./img/iphone-x.png 1x, ./img/iphone-x@2x.png 2x, ./img/iphone-x@3x.png 3x"
               type="image/png"
             />
@@ -127,10 +128,10 @@
           </picture>
           <ul class="list-fuatures">
             <li class="fuatures-item">
-              <picture>
+              <picture class="nft-img">
                 <source
-                srcset="./img/nft.png 1x, ./img/nft@2x.png 2x, ./img/nft@3x.png 3x"
-                type="image/png"
+                  srcset="./img/nft.png 1x, ./img/nft@2x.png 2x, ./img/nft@3x.png 3x"
+                  type="image/png"
                 />
                 <img src="./img/nft.png" alt="nft" width="28" loading="lazy" />
               </picture>
@@ -143,10 +144,10 @@
               </div>
             </li>
             <li class="fuatures-item">
-              <picture>
+              <picture class="nft-img">
                 <source
-                srcset="./img/nft.png 1x, ./img/nft@2x.png 2x, ./img/nft@3x.png 3x"
-                type="image/png"
+                  srcset="./img/nft.png 1x, ./img/nft@2x.png 2x, ./img/nft@3x.png 3x"
+                  type="image/png"
                 />
                 <img src="./img/nft.png" alt="nft" width="28" loading="lazy" />
               </picture>
@@ -159,7 +160,7 @@
               </div>
             </li>
             <li class="fuatures-item">
-              <picture>
+              <picture class="nft-img">
                 <source
                   srcset="./img/nft.png 1x, ./img/nft@2x.png 2x, ./img/nft@3x.png 3x"
                   type="image/png"
@@ -169,13 +170,13 @@
               <div>
                 <h3 class="header-fuature">Real-Time Updates:</h3>
                 <p class="fuature-detail">
-                  Users receive real-time updates and notifications to stay informed on important news
-                  and events, and to stay up-to-date with changes to the app.
+                  Users receive real-time updates and notifications to stay informed on important
+                  news and events, and to stay up-to-date with changes to the app.
                 </p>
               </div>
             </li>
             <li class="fuatures-item">
-              <picture>
+              <picture class="nft-img">
                 <source
                   srcset="./img/nft.png 1x, ./img/nft@2x.png 2x, ./img/nft@3x.png 3x"
                   type="image/png"
@@ -185,14 +186,14 @@
               <div>
                 <h3 class="header-fuature">Integration with Other Apps:</h3>
                 <p class="fuature-detail">
-                  The app integrates with other popular apps, making it easy for users to connect with
-                  their social media accounts, or to easily make in-app purchases using their
+                  The app integrates with other popular apps, making it easy for users to connect
+                  with their social media accounts, or to easily make in-app purchases using their
                   preferred payment method.
                 </p>
               </div>
             </li>
             <li class="fuatures-item">
-              <picture>
+              <picture class="nft-img">
                 <source
                   srcset="./img/nft.png 1x, ./img/nft@2x.png 2x, ./img/nft@3x.png 3x"
                   type="image/png"
@@ -202,14 +203,14 @@
               <div>
                 <h3 class="header-fuature">Multi-Language Support:</h3>
                 <p class="fuature-detail">
-                  The app is designed to be accessible to users all around the world, with support for
-                  multiple languages, making it easier for people to use the app in their native
+                  The app is designed to be accessible to users all around the world, with support
+                  for multiple languages, making it easier for people to use the app in their native
                   language.
                 </p>
               </div>
             </li>
             <li class="fuatures-item">
-              <picture>
+              <picture class="nft-img">
                 <source
                   srcset="./img/nft.png 1x, ./img/nft@2x.png 2x, ./img/nft@3x.png 3x"
                   type="image/png"
@@ -272,8 +273,7 @@
                 ./img/desktop/iphone-d@2x.png 2x,
                 ./img/desktop/iphone-d@3x.png 3x
               "
-              sizes=""
-              type="image/webp"
+              type="image/png"
             />
             <source
               media="(min-width: 768px)"
@@ -282,14 +282,12 @@
                 ./img/tablet/iphone-t@2x.png 2x,
                 ./img/tablet/iphone-t@3x.png 3x
               "
-              sizes=""
-              type="image/webp"
+              type="image/png"
             />
             <source
               media="(max-width: 767px)"
               srcset="./img/iphone.png 1x, ./img/iphone@2x.png 2x, ./img/iphone@3x.png 3x"
-              sizes=""
-              type="image/webp"
+              type="image/png"
             />
             <img src="./img/iphone.png" alt="IPhone X" loading="lazy" />
           </picture>
@@ -308,22 +306,138 @@
           </p>
           <ul class="team-list">
             <li class="team-list-item">
-              <picture><img src="" alt="" /></picture>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/desktop/david-patel.jpg    1x,
+                    ./img/desktop/david-patel@2x.jpg 2x,
+                    ./img/desktop/david-patel@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/tablet/david-patel.jpg    1x,
+                    ./img/tablet/david-patel@2x.jpg 2x,
+                    ./img/tablet/david-patel@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/david-patel.jpg    1x,
+                    ./img/david-patel@2x.jpg 2x,
+                    ./img/david-patel@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img class="team-item-picture" src="./img/david-patel.jpg" alt="David Patel" loading="lazy" />
+              </picture>
               <h3 class="name-team-person">David Patel</h3>
               <p class="profession-person">Managing Direcor</p>
             </li>
             <li class="team-list-item">
-              <picture><img src="" alt="" /></picture>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/desktop/rachel-kim.jpg    1x,
+                    ./img/desktop/rachel-kim@2x.jpg 2x,
+                    ./img/desktop/rachel-kim@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/tablet/rachel-kim.jpg    1x,
+                    ./img/tablet/rachel-kim@2x.jpg 2x,
+                    ./img/tablet/rachel-kim@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/rachel-kim.jpg    1x,
+                    ./img/rachel-kim@2x.jpg 2x,
+                    ./img/rachel-kim@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img class="team-item-picture" src="./img/rachel-kim.jpg" alt="Rachel Kim" loading="lazy" />
+              </picture>
               <h3 class="name-team-person">Rachel Kim</h3>
               <p class="profession-person">Lead Designer</p>
             </li>
             <li class="team-list-item">
-              <picture><img src="" alt="" /></picture>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/desktop/samantha-chen.jpg    1x,
+                    ./img/desktop/samantha-chen@2x.jpg 2x,
+                    ./img/desktop/samantha-chen@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/tablet/samantha-chen.jpg    1x,
+                    ./img/tablet/samantha-chen@2x.jpg 2x,
+                    ./img/tablet/samantha-chen@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/samantha-chen.jpg    1x,
+                    ./img/samantha-chen@2x.jpg 2x,
+                    ./img/samantha-chen@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img class="team-item-picture" src="./img/samantha-chen.jpg" alt="Samantha Chen" loading="lazy" />
+              </picture>
               <h3 class="name-team-person">Samantha Chen</h3>
               <p class="profession-person">Lead Developer</p>
             </li>
             <li class="team-list-item">
-              <picture><img src="" alt="" /></picture>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/desktop/andrew-nguyen.jpg    1x,
+                    ./img/desktop/andrew-nguyen@2x.jpg 2x,
+                    ./img/desktop/andrew-nguyen@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/tablet/andrew-nguyen.jpg    1x,
+                    ./img/tablet/andrew-nguyen@2x.jpg 2x,
+                    ./img/tablet/andrew-nguyen@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/andrew-nguyen.jpg    1x,
+                    ./img/andrew-nguyen@2x.jpg 2x,
+                    ./img/andrew-nguyen@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img class="team-item-picture" src="./img/andrew-nguyen.jpg" alt="Andrew Nguyen" loading="lazy" />
+              </picture>
               <h3 class="name-team-person">Andrew Nguyen</h3>
               <p class="profession-person">Sr. UI Designer</p>
             </li>
