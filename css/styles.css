@@ -514,6 +514,12 @@ main {
   background: var(--main-white-color);
 }
 
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-testimonials-header {
   font-size: 20px;
   font-weight: 700;
@@ -524,26 +530,54 @@ main {
 }
 
 .avatar-customer {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
   margin-bottom: 20px;
 }
 
 .name-customer {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
   color: var(--main-black-color);
 }
 
 .descr-customer {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 24px;
   color: var(--main-black-color);
 }
 
 .comment-customer {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 40px;
   color: var(--main-black-color);
 }
 
 .slider {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   gap: 8px;
+}
+
+.slider-item-buuton {
+  display: block;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: transparent;
+  border-radius: 50%;
+  background-color: #939EAC;
+}
+
+.slider-item-buuton:hover,
+.slider-item-buuton:focus {
+  background-color: var(--main-black-color);
 }
 
 /* ==== TESTIMONIALS ====*/
@@ -813,22 +847,45 @@ main {
     line-height: 1.5;
     margin-bottom: 40px;
   }
-  
+
   .team-list {
     column-gap: 32px;
     row-gap: 40px;
   }
-  
+
   .team-list-item {
     width: calc((100% - 32px) / 2);
     padding: 20px 20px 12px 20px;
   }
-  
+
   .team-item-picture {
     margin-bottom: 20px;
   }
 
   /* ==== TEAM ====*/
+  /* ==== TESTIMONIALS ====*/
+
+  .sec-testimonials {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .main-testimonials-header {
+    font-size: 24px;
+  }
+
+  .descr-customer {
+    margin-bottom: 40px;
+  }
+
+  .comment-customer {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 64px;
+    color: var(--main-black-color);
+  }
+
+  /* ==== TESTIMONIALS ====*/
 
   /* ==== FOOTER ====*/
 
@@ -966,18 +1023,28 @@ main {
     margin-right: auto;
     margin-bottom: 56px;
   }
-  
+
   .team-list {
     flex-wrap: nowrap;
     gap: 32px;
   }
-  
+
   .team-list-item {
     width: calc((100% - 96px) / 4);
     padding: 12px 14px;
   }
 
   /* ==== TEAM ====*/
+  /* ==== TESTIMONIALS ====*/
+  .sec-testimonials {
+    padding-bottom: 80px;
+  }
+  
+  .comment-customer {
+    width: 886px;
+  }
+
+  /* ==== TESTIMONIALS ====*/
 
   /* ==== FOOTER ====*/
 
